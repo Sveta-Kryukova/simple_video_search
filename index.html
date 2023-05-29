@@ -1,0 +1,39 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Search Engine</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <img src="./images/Logo.png" id="logo">
+    <h1>Video Search Engine</h1>
+  </div>
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Search video...">
+  </div>
+  <div id="results-container"></div>
+  <div id="preview-overlay"></div>
+  <div class="navigation-container">
+    <div id="current-page-info">
+      <button id="prev-button">&#8592; Prev</button>
+      <div id="page-info"></div>
+      <button id="next-button">Next &#8594;</button>
+    </div>
+  </div>
+  
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+  
+  <script async src="https://cse.google.com/cse.js?cx=14b2271404ed5415f"></script>
+  <div class="gcse-search" data-disable-form="true">
+    <div class="gsc-input-box">
+      <input class="gsc-input" type="text" placeholder="Search in Google">
+    </div>
+  </div>  
+</body>
+</html>
