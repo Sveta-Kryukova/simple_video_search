@@ -5,8 +5,13 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #DDD;
-  padding: 0 10px;
+  /* padding: 0 10px; */
+  min-height: 100vh;
 }
 
 .header {
@@ -30,7 +35,7 @@ h1 {
 
 #search-input {
   width: 100%;
-  max-width: 340px;
+  min-width: 340px;
   height: 48px;
   font-size: 16px;
   padding: 16px;
@@ -197,7 +202,7 @@ h1 {
 }
 
 .preview-title {
-  width: 312px;
+  min-width: 312px;
   font-family: 'Barlow', sans-serif;
   font-style: normal;
   font-weight: 600;
